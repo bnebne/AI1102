@@ -9,6 +9,7 @@ from linebot.exceptions import (
 from linebot.models import (
     MessageEvent, TextMessage, TextSendMessage,ImageSendMessage
 )
+import random
 
 app = Flask(__name__)
 
@@ -43,13 +44,19 @@ def handle_message(event):
     line_bot_api.reply_message(
         event.reply_token,
          TextSendMessage(text=reply(event.message.text)))
+def paper_sissor_stone(text):
+    pps = ["剪刀" ,"石頭", "布"]
+    random.shuffle(pps)
+    result = pps[1]
+    if result == text:
+        return result + "\n" + "平手"
+    elif (result == "剪刀" and text == "石頭") or (result == "石頭" and text == "布") or (result == "布" and text == "剪刀"):
+        return result + '\n' + "你贏了"
+    else:
+        return result + '\n' + "你輸了"
 def reply(text):
-    if text == "剪刀":
-        return "石頭"
-    elif text == "石頭":
-        return "布"
-    elif text == "布":
-        return "剪刀"
+    if text == "剪刀" or text == "石頭" or text == "布":
+        return paper_sissor_stone(text)
     else:
         return "Hello world"
 
