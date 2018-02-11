@@ -42,7 +42,7 @@ def handle_message(event):
     # Replace the text by what you want to say
     line_bot_api.reply_message(
         event.reply_token,
-         TextSendMessage(text=event.message.text))
+         TextSendMessage(text=reply(event.message.text)))
 def reply(text):
     if text == "剪刀":
         return "石頭"
