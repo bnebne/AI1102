@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a8fb9eb-08ec-4174-b83a-354e15cf54de" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitattributes" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/main.py" afterPath="" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Procfile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/main.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/requirements.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -68,6 +70,11 @@
       <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
