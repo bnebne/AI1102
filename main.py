@@ -82,7 +82,7 @@ def line_bot_car_suggestion_response(event,result):
         title = p['name']
         price = '價格: %s - %s 萬' % (str(p["min_price"]),str(p["max_price"]))
         action_intro = URITemplateAction(label ='詳細資料', uri = p['introduction'])
-        carousel_obj = CarouselColmn(thumbnail_image_url = image_url,
+        carousel_obj = CarouselColumn(thumbnail_image_url = image_url,
                                      title= title,
                                      text = price,
                                      actions=[action_intro])
