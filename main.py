@@ -96,7 +96,7 @@ def line_bot_car_suggestion_response(event,result):
 def line_bot_echo(event):
     line_bot_api.reply_message(
         event.reply_token ,
-        TextSendMessage(text=event.text)
+        TextSendMessage(text="最少要輸入三個字喔～")
     )
 
 if __name__ == "__main__":
