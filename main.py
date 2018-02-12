@@ -15,7 +15,7 @@ TextSendMessage,
 CarouselTemplate,
 URITemplateAction,
 TemplateSendMessage,
-CarouselColmn
+CarouselColumn
 )
 
 BACKEND_SERVUCE = "http://35.229.156.92:7705"
