@@ -92,7 +92,6 @@ def line_bot_car_suggestion_response(event,result):
     message = TemplateSendMessage(alt_text = "您的推薦結果", template=CarouselTemplate(columns=columns_data,
                                                                                      imageSize='contain'))
     line_bot_api.reply_message(event.reply_token ,message)
-    aaa
 
 def line_bot_echo(event):
     line_bot_api.reply_message(
